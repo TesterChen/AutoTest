@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" verbose="1">
+
+	<listeners>
+		<listener class-name="com.selenium.reports.testng.ExtentTestNGITestListener" />
+		<!-- <listener class-name="com.selenium.reports.testng.ExtentTestNGIReporterListener" />  -->
+	</listeners>
+
+	<test name="FirstWebAutoTest">
+		<classes>
+			<class name="com.selenium.reports.script.FirstWebAutoTest" />
+		</classes>
+	</test>
+
+	<test name="ReprotTest">
+		<classes>
+			<class name="com.selenium.reports.script.ReprotTest" />
+		</classes>
+	</test>
+</suite>
