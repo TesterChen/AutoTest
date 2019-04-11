@@ -2,4 +2,4 @@
 
 firstAutoTest：第一个WEB自动化程序；<br>
 reports：使用ExtentReports美化TestNG报告；<br>
-[预览](https://github.com/TesterChen/AutomationTest/blob/master/resource/images/report.png)
+![](https://github.com/TesterChen/AutomationTest/blob/master/resource/images/report.png)
