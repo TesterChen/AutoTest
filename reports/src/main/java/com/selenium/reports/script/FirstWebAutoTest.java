@@ -9,12 +9,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.selenium.reports.testng.ExtentTestNGIReporterListener;
+
 /**
- * simple selenium web test script
- *
+ * 若需要直接通过运行测试脚本的方式调用ExtentReports报告，则自定义注解@Listeners即可
+ * @Listeners(ExtentTestNGIReporterListener.class) 或
+ * @Listeners(ExtentTestNGITestListener.class)
  */
+// @Listeners(ExtentTestNGIReporterListener.class)
 public class FirstWebAutoTest {
 	WebDriver driver;
 
