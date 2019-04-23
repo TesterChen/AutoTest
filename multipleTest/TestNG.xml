@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- parallel可以为：
+  methods : 每个method使用一个线程
+  tests ：每个<test>标签中的所有方法使用一个线程
+  classes : 每个class使用一个线程 
+  
+  thread-count:每次执行测试的线程并发数
+  -->
+<suite name="test" parallel="methods" thread-count="2">
+	<test name="test">
+		<classes>
+			<class name="com.testerchen.qa.multiple.multipleTest" />
+		</classes>
+	</test>
+</suite>

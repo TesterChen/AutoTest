@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- parallel可以为： 
+	methods : 每个method使用一个线程 
+	tests ：每个<test>标签中的所有方法使用一个线程 
+	classes : 每个class使用一个线程 
+	
+	thread-count:每次执行测试的线程并发数
+	-->
+<suite name="test" parallel="tests" thread-count="2">
+	<test name="test firefox">
+		<parameter name="seleniumHubHost" value="127.0.0.1" />
+		<parameter name="seleniumHubPort" value="4444" />
+		<parameter name="browserType" value="firefox" />
+		<classes>
+			<class name="com.testerchen.qa.multiple.remoteMultipleTest" />
+		</classes>
+	</test>
+
+	<test name="test chrome">
+		<parameter name="seleniumHubHost" value="127.0.0.1" />
+		<parameter name="seleniumHubPort" value="4444" />
+		<parameter name="browserType" value="chrome" />
+		<classes>
+			<class name="com.testerchen.qa.multiple.remoteMultipleTest" />
+		</classes>
+	</test>
+</suite>

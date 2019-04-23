@@ -1,0 +1,1 @@
+java -jar selenium-server-standalone-3.141.59.jar -port 6666 -role node -hub http://127.0.0.1:4444/grid/register

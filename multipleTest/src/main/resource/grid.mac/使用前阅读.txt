@@ -1,0 +1,8 @@
+操作步骤
+---------
+1.chmod +x hud.sh 授权，然后./hub.sh 执行
+看到控制台输出 Selenium Grid hub is up and running 即可执行下一步
+
+2.chmod +x node.sh 授权，然后./node.sh 执行
+看到控制台输出 The node is registered to the hub and ready to use
+全部操作完成，可开始执行UI自动化
